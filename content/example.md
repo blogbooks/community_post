@@ -1,8 +1,7 @@
 # Hello World
 
 # Words
-**bold**
-__underline__
+**bold**   
 ~~delete~~
 
 # lists
