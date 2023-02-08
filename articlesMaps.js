@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const yaml = require('js-yaml');
 
 // ファイルタイプの列挙体（のつもり）
 const FileType = {
