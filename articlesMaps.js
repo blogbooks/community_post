@@ -79,4 +79,4 @@ list.forEach(d => {
     }
 })
 
-fs.writeFileSync("../.contents", Buffer.from(mapData).toArray());
+fs.writeFileSync("../.contents", JSON.stringify(mapData));
