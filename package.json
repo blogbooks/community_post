@@ -8,5 +8,7 @@
   },
   "author": "github.com/blogbooks",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+  }
 }
