@@ -25,8 +25,8 @@ jobs:
           echo "Running"
       - name: Push
         run: |
-          git config user.name GithubAction
-          git config user.email github-actions@github.com
+          git config user.name ArticleManager
+          git config user.email developers@group.blogbooks.net
           git add .
           git commit -m "generated"
           git push
