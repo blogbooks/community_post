@@ -9,6 +9,6 @@
   "author": "github.com/blogbooks",
   "license": "ISC",
   "dependencies": {
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.1.0"
   }
 }
