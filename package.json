@@ -1,0 +1,12 @@
+{
+  "name": "article.map",
+  "version": "1.0.0",
+  "description": "Create Mapping collect articles",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "github.com/blogbooks",
+  "license": "ISC",
+  "dependencies": {}
+}
