@@ -79,4 +79,4 @@ list.forEach(d => {
     }
 })
 
-fs.writeFileSync("../.contents", Buffer.from(mapData).toString("hex"));
+fs.writeFileSync("../.contents", Buffer.from(mapData).toArray());
