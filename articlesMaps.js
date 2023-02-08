@@ -63,7 +63,7 @@ const listFiles = dirPath => {
   return ret;
 };
 
-const dirPath = path.resolve(__dirname, 'target');
+const dirPath = path.resolve(__dirname);
 const list = listFiles(dirPath);
 let mapData = [];
 
