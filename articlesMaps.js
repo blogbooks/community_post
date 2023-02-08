@@ -74,7 +74,7 @@ list.forEach(d => {
     const stats = fs.statSync(d);
     d = d.replace("/home/runner/work/community_post/community_post/content/", "");
     d = d.replace(".md", "");
-    if (!d.includes("/.views/")) {
+    if (!d.startsWith(".views/")) {
         if (markdown.match(/^---[\s\S]*---/) == null) {
 
         } else {
