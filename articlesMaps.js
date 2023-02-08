@@ -47,7 +47,7 @@ const listFiles = dirPath => {
 
     switch (getFileType(path)) {
       case FileType.File:
-        if (!path.endswith(".md")) break;
+        if (!a.endswith(".md")) break;
         ret.push(path);
         break;
 
