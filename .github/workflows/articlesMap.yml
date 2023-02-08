@@ -16,10 +16,8 @@ jobs:
       - uses: actions/setup-node@v3.6.0
         with:
           node-version: 16
-          cache: yarn
-          cache-dependency-path: ${{github.workspace}}/content/yarn.lock
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: Create ArticlesMaps
         run: |
           cd content
