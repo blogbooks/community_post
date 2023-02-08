@@ -73,6 +73,7 @@ list.forEach(d => {
     const markdown = fs.readFileSync(d, {encoding: 'utf-8'});
     const stats = fs.statSync(d);
     d = d.replace("/home/runner/work/community_post/community_post/content", "");
+    d = d.replace(".md", "");
     if (markdown.match(/^---[\s\S]*---/) == null) {
         
     } else {
