@@ -72,13 +72,17 @@ let mapData = [];
 list.forEach(d => {
     const markdown = fs.readFileSync(d, {encoding: 'utf-8'});
     const stats = fs.statSync(d);
-    d = d.replace("/home/runner/work/community_post/community_post/content", "");
+    d = d.replace("/home/runner/work/community_post/community_post/content/", "");
     d = d.replace(".md", "");
-    if (markdown.match(/^---[\s\S]*---/) == null) {
+    if (d.startsWith("/.views/")) {
         
     } else {
-        const meta = yaml.load(markdown.match(/^---[\s\S]*?---/)[0].substring(3, markdown.match(/^---[\s\S]*?---/)[0].length - 3));
-        mapData.push({"path": d, "title": meta.title, "timestamp": stats.mtime, "description": meta.description});
+        if (markdown.match(/^---[\s\S]*---/) == null) {
+
+        } else {
+            const meta = yaml.load(markdown.match(/^---[\s\S]*?---/)[0].substring(3, markdown.match(/^---[\s\S]*?---/)[0].length - 3));
+            mapData.push({"path": d, "title": meta.title, "timestamp": stats.mtime, "description": meta.description});
+        }
     }
 })
 
