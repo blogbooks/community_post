@@ -44,6 +44,7 @@ const listFiles = dirPath => {
 
   paths.forEach(a => {
     const path = `${dirPath}/${a}`;
+    console.log(path);
 
     switch (getFileType(path)) {
       case FileType.File:
