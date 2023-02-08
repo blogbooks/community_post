@@ -13,12 +13,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3.3.0
-      - name: Use Node.js
-        uses: actions/setup-node@v3.6.0
+      - uses: actions/setup-node@v3.6.0
         with:
           node-version: 16
           cache: yarn
-          cache-dependency-path: ${{github.workspace}}/yarn.lock
+          cache-dependency-path: ${{github.workspace}}/content/yarn.lock
       - name: Install Dependencies
         run: npm ci
       - name: Create ArticlesMaps
