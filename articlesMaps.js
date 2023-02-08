@@ -69,7 +69,7 @@ const list = listFiles(dirPath);
 let mapData = [];
 
 list.forEach(d => {
-    const markdown = fs.readFileSync(d);
+    const markdown = fs.readFileSync(d, {encoding: 'utf-8'});
     if (markdown.match(/^---[\s\S]*---/) == null) {
         
     } else {
